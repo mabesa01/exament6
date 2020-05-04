@@ -1,0 +1,5 @@
+contador=1
+maximopid= `cat procesos.txt | wc -l `
+contadorpid=0
+
+while 
