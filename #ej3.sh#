@@ -1,0 +1,2 @@
+read -p "Introuce un nombre de usuario: " u
+

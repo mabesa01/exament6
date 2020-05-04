@@ -5,17 +5,17 @@ if [ $file != $typefile ]; then
 fi
 
 contador=1
-maximopid= `cat procesos.txt | wc -l `
+maximopid= ` cat procesos.txt | wc -l `
 contadorpid=0
 
 while [ $contador -le $maximopid ]; then
 linea= `cat procesos.txt | head -${contador} | tail -1`
 pid= `echo $linea | awk '{print$2}'`
 
-if [ $pid -ge $parametro ]; then
+if [ $pid -ge $# ]; then
     contadorpid=$((contadorpid+1))
 
-elif [ $contador -lt $parametro ]; then
+elif [ $contador -lt $# ]; then
     echo "El parametro introducido es incorrecto."
     break
     fi
