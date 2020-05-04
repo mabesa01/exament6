@@ -1,2 +1,26 @@
 read -p "Introuce un nombre de usuario: " u
 
+ruta_ anterior= `pwd`
+ruta_usuario=$ruta_anterior/$1
+cd$1
+ruta_actual=`pwd`
+
+contador=0
+contadorficheros=0
+contadordirectorios=0
+maxlineas=
+
+while [ $contador -le ]
+
+
+
+
+
+
+
+
+
+if [ $ruta_usuario = $ruta_actual ]; then
+  
+   
+ 
